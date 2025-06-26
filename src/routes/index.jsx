@@ -7,6 +7,7 @@ import Matches from '../pages/Matches';
 import Profile from '../pages/Profile';
 import Chat from '../pages/Chat';
 import Whisperreveal from '../pages/Whisperreveal';
+import PhotoRevealModal from '../components/PhotoRevealModal';
 
 const AppRoutes = () => (
   <Routes>
@@ -17,6 +18,7 @@ const AppRoutes = () => (
     <Route path="/profile" element={<Profile />} />
     <Route path="/chat/:id" element={<Chat />} />
     <Route path="/whisperreveal" element={<Whisperreveal />} />
+    <Route path="/photo-reveal" element={<PhotoRevealModal />} />
     <Route path="*" element={<Login />} />
   </Routes>
 );
