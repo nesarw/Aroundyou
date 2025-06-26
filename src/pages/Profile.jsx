@@ -57,7 +57,7 @@ const Profile = () => {
               type="button"
               onClick={handlePhotoChange}
               style={{
-                position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', fontSize: 10, padding: '2px 8px', borderRadius: 8, background: '#ff4b2b', color: '#fff', border: 'none', cursor: 'pointer',
+                position: 'absolute', bottom: 0, left: '50%', transform: 'translateX(-50%)', fontSize: 10, padding: '2px 8px', borderRadius: 8, background: 'linear-gradient(90deg, #ff512f 0%, #dd2476 100%)', color: '#fff', border: 'none', cursor: 'pointer',
               }}
               disabled={!editMode}
             >
@@ -68,7 +68,7 @@ const Profile = () => {
             <div style={{ fontWeight: 700, fontSize: 20, color: '#000' }}>{profile.name}</div>
             <div style={{ color: '#888', fontSize: 14 }}>{profile.email}</div>
           </div>
-          <button type="button" className="ghost" onClick={handleEditToggle} style={{ minWidth: 120, background: '#ff4b2b', color: '#fff', border: 'none', borderRadius: 20, padding: '8px 24px', fontWeight: 'bold', boxShadow: editMode ? '0 2px 8px rgba(255,75,43,0.08)' : 'none' }}>
+          <button type="button" className="ghost" onClick={handleEditToggle} style={{ minWidth: 120, background: 'linear-gradient(90deg, #ff512f 0%, #dd2476 100%)', color: '#fff', border: 'none', borderRadius: 20, padding: '8px 24px', fontWeight: 'bold', boxShadow: editMode ? '0 2px 8px rgba(255,75,43,0.08)' : 'none' }}>
             {editMode ? 'Cancel' : 'Edit Profile'}
           </button>
         </div>
@@ -115,7 +115,7 @@ const Profile = () => {
                 style={{ width: '100%', minWidth: 500, maxWidth: 400, minHeight: 48, background: '#eee', border: 'none', borderRadius: 10, padding: 12, marginTop: 1, color: '#000', resize: 'none' }}
               />
           </div>
-          <button type="submit" style={{ marginTop: 24, width: '100%', background: '#ff4b2b', color: '#fff', border: 'none', borderRadius: 20, padding: '12px 0', fontWeight: 'bold', fontSize: 16, boxShadow: '0 2px 8px rgba(255,75,43,0.08)' }} disabled={!editMode}>
+          <button type="submit" style={{ marginTop: 24, width: '100%', background: 'linear-gradient(90deg, #ff512f 0%, #dd2476 100%)', color: '#fff', border: 'none', borderRadius: 20, padding: '12px 0', fontWeight: 'bold', fontSize: 16, boxShadow: '0 2px 8px rgba(255,75,43,0.08)' }} disabled={!editMode}>
             Save Changes
           </button>
         </form>
@@ -141,7 +141,7 @@ const Profile = () => {
             />
             <button
               type="button"
-              style={{ marginTop: 8, width: '100%', background: '#ff4b2b', color: '#fff', border: 'none', borderRadius: 20, padding: '12px 0', fontWeight: 'bold', fontSize: 16, boxShadow: '0 2px 8px rgba(255,75,43,0.08)' }}
+              style={{ marginTop: 8, width: '100%', background: 'linear-gradient(90deg, #ff512f 0%, #dd2476 100%)', color: '#fff', border: 'none', borderRadius: 20, padding: '12px 0', fontWeight: 'bold', fontSize: 16, boxShadow: '0 2px 8px rgba(255,75,43,0.08)' }}
               onClick={() => alert('Password change confirmed!')}
             >
               Confirm Password Change
@@ -161,7 +161,7 @@ const Profile = () => {
                   style={{ opacity: 0, width: 0, height: 0, position: 'absolute' }}
                 />
                 <span style={{
-                  width: 48, height: 28, borderRadius: 20, background: profile.photoVisible ? '#fff' : '#f1f3f6', boxShadow: profile.photoVisible ? '0 2px 8px #d1d5db' : '0 2px 8px #e5e7eb', display: 'inline-block', position: 'relative', transition: 'background 0.2s',
+                  width: 48, height: 28, borderRadius: 20, background: profile.photoVisible ? '#2563eb' : '#ff4b2b', boxShadow: profile.photoVisible ? '0 2px 8px #2563eb' : '0 2px 8px #ff4b2b', display: 'inline-block', position: 'relative', transition: 'background 0.2s',
                 }}>
                   <span style={{
                     position: 'absolute', left: profile.photoVisible ? 22 : 4, top: 4, width: 20, height: 20, borderRadius: '50%', background: '#fff', boxShadow: '0 2px 8px #d1d5db', transition: 'left 0.2s',

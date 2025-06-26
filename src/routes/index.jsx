@@ -6,6 +6,7 @@ import Inbox from '../pages/Inbox';
 import Matches from '../pages/Matches';
 import Profile from '../pages/Profile';
 import Chat from '../pages/Chat';
+import Whisperreveal from '../pages/Whisperreveal';
 
 const AppRoutes = () => (
   <Routes>
@@ -15,6 +16,7 @@ const AppRoutes = () => (
     <Route path="/matches" element={<Matches />} />
     <Route path="/profile" element={<Profile />} />
     <Route path="/chat/:id" element={<Chat />} />
+    <Route path="/whisperreveal" element={<Whisperreveal />} />
     <Route path="*" element={<Login />} />
   </Routes>
 );
